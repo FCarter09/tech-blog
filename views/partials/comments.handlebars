@@ -1,0 +1,26 @@
+
+<div class="comments">
+  {{#each this}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="text">
+      {{comment_text}}
+    </div>
+     <!-- input will be added here when click 'edit note' -->
+    <div class="button">
+      <button type="submit" class="edit-comment-btn" data-commentID={{id}} >edit comment</button>
+      <button type="submit" class="delete-comment-btn" data-commentID={{id}} >delete comment</button>
+       <!-- save and abortEdit buttons will be added when editing note -->
+      <button type="submit" class="save-comment-btn" data-commentID={{id}} style="display:none"> save comment </button>
+      <button type="submit" class="abort-edit-comment-button" data-commentID={{id}} style="display:none"> return without saving </button>
+    </div>
+  </section>
+  {{/each}}
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/edit-comments.js"></script>
+<script src="/javascript/delete-comments.js"></script>
+{{/if}}
