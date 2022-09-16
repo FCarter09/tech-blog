@@ -81,7 +81,7 @@ router.get('/', (req, res) => {
     Post.update(
       {
         title: req.body.title,
-        post_text: req.body.post_text,
+        post_text: req.body.postText
 
       },
       {

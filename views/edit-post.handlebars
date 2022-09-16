@@ -6,8 +6,14 @@
   </h2>
   <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
+      <div>
+        <label for="edit-title">Edit Title</label>
+        <input name="post-title" type="text" value="{{post.title}}" />
+      </div>
+      <div>
+      <label for="edit-text">Edit Text</label>
       <input name="post-text" type="text" value="{{post.post_text}}" />
+      </div>
     </div>
     <div>
       created by you on {{format_date post.created_at}}
