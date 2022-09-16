@@ -33,13 +33,13 @@
       // addEventListener for save button
       saveBtn.addEventListener('click', async() => {
         // assign inputEl.value to variable
-        const editNoteText = inputEl.value
+        const editCommentText = inputEl.value
         
       // PUT request to update note when save button is clicked
       const response = await fetch(`/api/comments/${commentID}`, {
               method: 'PUT',
               body: JSON.stringify({
-                editNoteText
+                editCommentText
               }),
               headers: {
                 'Content-Type': 'application/json'
