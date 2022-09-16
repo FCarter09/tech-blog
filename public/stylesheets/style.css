@@ -160,6 +160,15 @@
   .edit-post-form {
     margin-bottom: 5%;
   }
+
+  label {
+    color: #225ca3;
+    font-weight: bold;
+  }
+
+  .edit-post-form input {
+    margin-bottom: 20px;
+  }
   
   footer {
     border-top: 1px solid #ccc;
