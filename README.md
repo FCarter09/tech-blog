@@ -9,7 +9,7 @@ blog site for those who register as users.
 
 ## Technologies Used
 
-Tech Blog was built with HTML5, CSS< Javascript, Node, MySQL, and Sequelize.
+Tech Blog was built with HTML5, CSS, Javascript, Node, MySQL, and Sequelize.
 
 ## Application Link
 
